@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - QR FORT EYE</title>
+    <style>
+        /* -------------------- LOGIN PAGE STYLING (OLIVE THEME) -------------------- */
+/* Header navigation styling */
+header {
+    display: flex;
+    justify-content: flex-end; /* moves items to the right */
+    align-items: center;
+    padding: 20px 50px;
+    position: relative;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #3e442b;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #808000; /* olive hover */
+}
+
+
+main form {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 350px;
+    margin: 80px auto 50px auto;  /* reduced from 150px to 80px */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #556b2f; /* dark olive green */
+    font-size: 24px;
+    font-weight: 600;
+}
+
+main label {
+    display: block;
+    font-weight: 500;
+    color: #3e442b; /* soft olive tone */
+    margin-bottom: 6px;
+}
+
+main input[type="text"],
+main input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #a2a77f;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+main input[type="text"]:focus,
+main input[type="password"]:focus {
+    border-color: #808000;
+    box-shadow: 0 0 6px rgba(128, 128, 0, 0.4);
+}
+
+main button {
+    width: 100%;
+    padding: 10px;
+    background-color: #808000; /* olive */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main button:hover {
+    background-color: #6b8e23; /* lighter olive (olive drab) */
+}
+
+/* faint background logo for login page */
+body {
+    background: #fff url("../logofort.png.jpeg") no-repeat center center fixed;
+    background-size: 280px;
+    opacity: 0.98;
+}
+
+    </style>
+    <link rel="stylesheet" href="css2/style2.css">
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <ul>
+            <li><a href="qrfort.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h1>Log in</h1>
+        <form>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" placeholder="Enter Username"><br><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" placeholder="Enter Password"><br><br>
+
+            <button type="submit">Login</button>
+        </form>
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>

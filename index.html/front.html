@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historic Forts of Maharashtra</title>
+  <style>
+    /* ---------------- Olive Theme & Layout ---------------- */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background: #fafafa url("logofort.png") no-repeat center center fixed;
+      background-size: 320px;
+      background-blend-mode: lighten;
+      color: #2f3b1d;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 60px;
+    }
+
+    header ul {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+      margin: 0;
+      padding: 0;
+    }
+
+    header ul li a {
+      text-decoration: none;
+      color: #3e442b;
+      font-weight: 700;
+      font-size: 18px;
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    header ul li a:hover {
+      color: #808000;
+      transform: scale(1.05);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #556b2f;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .forts-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .fort-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .fort-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .fort-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .fort-card h2 {
+      margin: 15px 0 10px;
+      color: #6b8e23;
+      font-size: 22px;
+    }
+
+    .fort-card p {
+      padding: 0 15px 20px;
+      color: #333;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #3e442b;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <h1>Forts of Maharashtra</h1>
+
+    <div class="forts-container">
+      <!-- Raigad Fort -->
+      <div class="fort-card">
+        <img src="images/raigad.jpg" alt="Raigad Fort">
+        <h2>Raigad Fort</h2>
+        <p>The capital of the Maratha Empire under Chhatrapati Shivaji Maharaj. Known for its strategic height and historic architecture.</p>
+      </div>
+
+      <!-- Purandar Fort -->
+      <div class="fort-card">
+        <img src="images/purandar.jpg" alt="Purandar Fort">
+        <h2>Purandar Fort</h2>
+        <p>A fort with panoramic views and deep historical roots, where the Treaty of Purandar was signed in 1665.</p>
+      </div>
+
+      <!-- Sindhudurg Fort -->
+      <div class="fort-card">
+        <img src="images/sindhudurg.jpg" alt="Sindhudurg Fort">
+        <h2>Sindhudurg Fort</h2>
+        <p>Built on an island in the Arabian Sea by Shivaji Maharaj, this sea fort stands as a marvel of coastal defense.</p>
+      </div>
+
+      <!-- Panhala Fort -->
+      <div class="fort-card">
+        <img src="images/panhala.jpg" alt="Panhala Fort">
+        <h2>Panhala Fort</h2>
+        <p>One of the largest forts in the Deccan, Panhala played a key role in Maratha history and offers scenic hill views.</p>
+      </div>
+
+      <!-- Pratapgad Fort -->
+      <div class="fort-card">
+        <img src="images/pratapgad.jpg" alt="Pratapgad Fort">
+        <h2>Pratapgad Fort</h2>
+        <p>Famous for the battle between Shivaji Maharaj and Afzal Khan, this fort symbolizes courage and valor.</p>
+      </div>
+
+      <!-- Murud-Janjira Fort -->
+      <div class="fort-card">
+        <img src="images/murud.jpg" alt="Murud-Janjira Fort">
+        <h2>Murud-Janjira Fort</h2>
+        <p>An undefeated sea fort, surrounded by the Arabian Sea, known for its unique construction and history of resistance.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Preserving the legacy of Maharashtra’s mighty forts.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Form</title>
+
+    <style>
+        body {
+            background-color: #f5f8f4;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        form {
+            background-color: #ffffff;
+            border: 2px solid #708238; /* olive green border */
+            border-radius: 12px;
+            padding: 30px;
+            width: 320px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #556b2f;
+            margin-bottom: 6px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 18px;
+            border: 1.5px solid #a0b083;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 80px;
+            resize: none;
+        }
+
+        button {
+            background-color: #708238;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #5a6e26;
+        }
+
+        h2 {
+            text-align: center;
+            color: #556b2f;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <form>
+        <h2> Report Form</h2>
+        <div>
+            <label for="name">NAME</label>
+            <input type="text" id="name" placeholder="ENTER YOUR NAME">
+        </div>
+
+        <div>
+            <label for="fort name">FORT NAME</label>
+            <input type="text" id="fort name" placeholder="ENTER YOUR FORT NAME">
+        </div>
+
+        <div>
+            <label for="phoneno">PHONE</label>
+            <input type="number" id="phoneno" placeholder="ENTER YOUR PHONE">
+        </div>
+
+        <div>
+            <label for="issue">ISSUE</label>
+            <textarea id="issue" placeholder="DESCRIPTION OF THE ISSUE"></textarea>
+        </div>
+
+        <div>
+            <label for="photo">PHOTO</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
+
+    
